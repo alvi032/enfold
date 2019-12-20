@@ -2,7 +2,7 @@
     margin: 0 5px;
 }
 .account-sidebar{
-    width: 100%;
+    width: 95%;
     border: 3px solid var(--clr2);
     border-radius: 30px;
     margin-bottom: auto;
@@ -45,4 +45,19 @@
 .banner-settings ul{
     list-style: none;
     padding-left: 0;
+}
+@media (max-width: 767px){
+    .account>div{
+        margin: auto;
+    }
+    .account-sidebar ul{
+        flex-direction: column;
+    }
+    .account-sidebar li{
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+    select#timezone-list {
+        width: 100%;
+    }
 }
