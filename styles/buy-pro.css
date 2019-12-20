@@ -1,0 +1,17 @@
+.buy-pro-package{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 325px;
+    margin: 40px auto;
+
+}
+.buy-pro-package p{
+    margin: 0;
+}
+.buy-pro-package img{
+    height: 100%;
+}
+.buy-pro-package .submit-button{
+    margin: unset;
+}

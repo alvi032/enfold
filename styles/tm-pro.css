@@ -1,0 +1,18 @@
+.tm-pro .enclosed-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    max-width: 1440px;
+    width: 90%;
+    margin: 3em auto;
+    border: 3px solid var(--clr5);
+}
+.tm-pro .enclosed-div img{
+    height: 120px;
+    border-radius: 20px;
+    width: 201.5px
+}
+.tm-pro .enclosed-div>div>p:first-child{
+    color: var(--clr2)
+}
