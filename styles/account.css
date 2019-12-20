@@ -1,0 +1,48 @@
+.account>div{
+    margin: 0 5px;
+}
+.account-sidebar{
+    width: 100%;
+    border: 3px solid var(--clr2);
+    border-radius: 30px;
+    margin-bottom: auto;
+    height: max-content;
+}
+.account-sidebar>p:first-child{
+    background-color: var(--clr1);
+    color: var(--clr2);
+    font-weight: 600;
+    margin-top: 0;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 27px 27px 0 0;
+}
+.account-sidebar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+}
+.account-sidebar a{
+    text-decoration: none;
+    color: var(--clr2);
+    font-weight: 500;
+}
+.account-main{
+    max-width: 767px;
+    width: 100%;
+    margin: auto !important;
+}
+.account-main>p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--clr3);
+    background-color: var(--clr1);
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 30px;
+}
+.banner-settings ul{
+    list-style: none;
+    padding-left: 0;
+}

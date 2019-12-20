@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>account</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styling.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/play.css">
+    <link rel="stylesheet" href="styles/faqs.css">
+    <link rel="stylesheet" href="styles/sign-in.css">
+    <link rel="stylesheet" href="styles/account.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<header id="myNav">
+    <div class="container-full" id="navbar">
+        <a href="index.html" class="link"><p>
+            <span class="bold-2rem light-grey">GAME</span>
+            <br>
+            <span class="bold-2rem orange">LOGO</span>
+        </p></a>
+        <div id="hamburger-icon">
+            <input type="checkbox" id="btnControl"/>
+            <label for="btnControl" id="label-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <ul id="nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="sign-in.html">Sign In</a></li>
+        </ul>
+    </div>
+    <ul id="mobile-nav-ul">
+        <li><a href="index.html"><img src="images/menu%20svgs/services.png" alt="">Home</a></li>
+        <li><a href="play.html"><img src="images/menu%20svgs/questionnaire.png" alt="">Play</a></li>
+        <li><a href="faqs.html"><img src="images/menu%20svgs/reviewers.png" alt="">FAQs</a></li>
+        <li><a href="sign-in.html"><img src="images/menu%20svgs/blog.png" alt="">Sign In</a></li>
+    </ul>
+</header>
+
+<section class="first-section">
+    <div class="container">
+        <div class="account pt-60 pb-40">
+            <div class="account-sidebar">
+                <p>Account</p>
+                <div class="account-sidebar-menu">
+                    <ul>
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Club Info</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Reserve Team</a></li>
+                        <li><a href="#">Donate PRO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="account-main">
+                <p>Language & Time</p>
+                <div>
+                    <p>
+                        Football Manager offers a wide selection of languages maintained by our
+                        language teamters. If you encounter missing translations or wrong translations please
+                        contact your local language teamster.
+                    </p>
+                    <div class="language-selection">
+                        <label for="languages-list">Select Language</label>
+                        <select name="" id="languages-list">
+                            <option value="english">English(US)</option>
+                            <option value="english">English(UK)</option>
+                        </select>
+                    </div>
+                </div>
+                <p>Select Timezone</p>
+                <div>
+                    <div class="timezone-selection">
+                        <label for="timezone-list">Select Timezone</label>
+                        <select name="" id="timezone-list">
+                            <option value="timezone">(GMT+01:00) TM Time, Brussels, Copenhagen, Madrid, Paris
+                            </option>
+                            <option value="timezone">(GMT) Dublin, Edinburgh, Lisbon, London</option>
+                        </select>
+                    </div>
+                </div>
+                <p>Change Email</p>
+                <div>
+                    <p>Your email is used for password recovery and login. It is important that you put in your
+                        correct email, so you can always recover your account.</p>
+                    <form action="">
+                        <div class="d-flex column">
+                            <label for="change-email">Change Email:</label>
+                            <input type="text" id="change-email" class="text-input">
+                        </div>
+                        <div class="d-flex column">
+                            <label for="change-password">Change Password:</label>
+                            <input type="text" id="change-password" class="text-input">
+                        </div>
+                        <button class="submit-button">Update</button>
+                    </form>
+                </div>
+                <p>Change Password</p>
+                <div>
+                    <p>Remember your password must be at least 6 characters long.</p>
+                    <form action="">
+                        <div class="d-flex column">
+                            <label for="current-password">Old Password:</label>
+                            <input type="text" id="current-password" class="text-input">
+                        </div>
+                        <div class="d-flex column">
+                            <label for="new-password">New Password:</label>
+                            <input type="text" id="New-password" class="text-input">
+                        </div>
+                        <div class="d-flex column">
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="text" id="confirm-password" class="text-input">
+                        </div>
+                        <button class="submit-button">Update</button>
+                    </form>
+                </div>
+                <p>Advanced Mode</p>
+                <div>
+                    <p>
+                        You can play Trophy Manager in advanced mode. This gives you
+                    </p>
+                    <ul>
+                        <li>a more detailed Training overview</li>
+                        <li>more filter options on the transferlist</li>
+                        <li>Skill index as an addition to Recommendation on players</li>
+                    </ul>
+                    <div>
+                        <input type="checkbox" id="advanced-mode">
+                        <label for="advanced-mode">Play in advanced mode</label>
+                    </div>
+                </div>
+                <p>Banner Settings</p>
+                <div class="banner-settings">
+                    <p>Banners & Newsletters generate a huge part of Trophy Manager's income and the money earned
+                        from them are used to develop TM. For convenience we allow PRO users to disable banners and
+                        newsletters.</p>
+                    <div>
+                        <ul>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="top-banner">
+                                    <label for="top-banner">Top Banner</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="upper-right-rectangle">
+                                    <label for="upper-right-rectangle">Upper Right Rectangle</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="rectangle-inside-pop-ups">
+                                    <label for="rectangle-inside-pop-ups">Rectangle inside pop-ups</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="left-skyscrapper">
+                                    <label for="left-skyscrapper">Left Skyscraper</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="bottom-banner">
+                                    <label for="bottom-banner">Bottom Banner</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="email-newsletter">
+                                    <label for="email-newsletter">Email Newsletters (less than 5 per season)</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="submit-button">Update</button>
+                    </div>
+                </div>
+                <p>Forum Settings</p>
+                <div>
+                    Here you can change your club's appearance and description.
+                    <div class="d-flex column pt-20">
+                        <label for="signature">Signature(Max 2 lines):</label>
+                        <textarea name="" id="signature" cols="30" rows="2" class="text-input"></textarea>
+                    </div>
+                    <button class="submit-button">Save</button>
+                </div>
+                <p>Big Forum Logo</p>
+                <div>
+                    <p>Show off your amazing forum logo in double size. A one off payment of only 100 pro days.</p>
+                    <button class="submit-button">Buy Big Forum Logo (100 Pro Days)</button>
+                </div>
+                <p>Facebook</p>
+                <div>
+                    <p>Add the Trophy Manager App to your facebook account:</p>
+                    <button class="submit-button">Link Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="upper-footer">
+        <div class="container">
+            <div class="icon-and-address">
+                <!--                <img src="images/wall%20street%20shortcut%20white.png" alt="Wall Street Shortcut" class="footer-logo">-->
+                <p class="bold-3rem no-mg">
+                    <span class="light-grey">GAME</span>
+                    <br>
+                    <span class="orange">LOGO</span>
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <ul class="quicklinks">
+                    <li><a href="advertise.html">Advertise</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+                <ul class="quicklinks">
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="guide.html">User Guide</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lower-footer">
+        <div class="container">
+            <p><span class="medium-075rem light-grey">© 2019 Football Trophy. </span><span
+                    class="regular-075rem light-grey">All Rights Reserved</span>
+            </p>
+
+        </div>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/d73f645a4a.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
